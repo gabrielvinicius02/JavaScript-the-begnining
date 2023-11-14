@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LEsson 9 exercises</title>
+  </head>
+  <body>
+    <input class="js-input" onkeydown="keydown(event);" type="text">
+    <button class="button" onclick="
+      displayMessage();
+    ">Submit</button>
+    <p class="blank-paragraph"></p>
+
+
+    <script>
+      const textBox = document.querySelector('.js-input');
+
+      function displayMessage(){
+        const text = textBox.value;
+        document.querySelector('.blank-paragraph').innerHTML = `Your name is: ${text}`;
+      }
+
+      function keydown(event){
+        if(event.key === 'Enter') {
+          displayMessage();
+        }
+      }
+    </script>
+  </body>
+</html>

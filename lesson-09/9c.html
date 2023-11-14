@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lesson 9 exercises</title>
+  </head>
+  <body>
+    <button class="js-heads-button" onclick="
+      onClick('heads');
+    ">heads</button>
+    
+    <button class="js-tails-button" onclick="
+      onClick('tails');
+    ">tails</button>
+    <p class="blank-paragraph"></p>
+
+    <script>
+      
+      const headsButton = document.querySelector('.js-heads-button');
+
+      const tailsButton = document.querySelector('.js-tails-button');
+
+      function onClick(player) {
+        if(player === 'heads') {
+          document.querySelector('.blank-paragraph').innerHTML = `You chose: ${player}`;
+        } else {
+          document.querySelector('.blank-paragraph').innerHTML = `You chose: ${player}`;
+        }
+      }
+    </script>
+  </body>
+</html>

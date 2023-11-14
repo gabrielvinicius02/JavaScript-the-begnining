@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Advanced Functions</title> 
+  </head>
+  <body>
+    <script>
+      /*
+      function run(param) {
+        param();
+      }
+
+      run(function() {
+        console.log('hello world');
+      });
+      */
+      /*
+      setTimeout(function() {
+        console.log('timeout');
+        console.log('timeout2')
+      }, 3000);
+
+      console.log('next line');
+
+      setInterval(function() {
+        console.log('interval')
+      }, 100000);
+
+      console.log('next line 2');
+      */
+
+      [
+        'make dinner',
+        'wash dishes',
+        'watch youtube'
+      ].forEach(function(value, index) {
+        if(value === 'wash dishes') {
+          return;
+        }
+        console.log(index);
+        console.log(value);
+      });
+    </script>
+  </body>
+</html>

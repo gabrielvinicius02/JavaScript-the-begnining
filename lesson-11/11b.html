@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lesson 11 exercises</title>
+  </head>
+  <body>
+
+    <script>
+      const nums = [1, 20, 22, 24, 5];
+      const strings = ['hi', 'hello', 'good'];
+      /*
+      function getLastValue(nums, strings) {
+        return nums[nums.length - 1];
+        return strings[strings.length - 1];
+      }
+      
+      console.log(getLastValue(nums));
+      console.log(getLastValue(strings));
+      */
+
+      function getLastValues(nums, strings) {
+        const lastNum = nums[nums.length - 1];
+        const lastString = strings[strings.length - 1];
+        return [lastNum, lastString];
+      }
+
+      const result = getLastValues(nums, strings);
+      console.log(result[0]); // Last number
+      console.log(result[1]); // Last string
+    </script>
+  </body>
+</html>
