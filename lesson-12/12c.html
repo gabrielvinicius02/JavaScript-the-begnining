@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lesson 12 exercises</title>
+  </head>
+  <body>
+    <button class="js-start-button" onclick="
+      updateButton();  
+    ">Start</button>
+    
+    <script>
+      function updateButton() {
+        const buttonElement = document.querySelector('.js-start-button');
+
+        setTimeout(function() {
+          buttonElement.innerHTML = 'Finished!'
+        }, 3000);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lesson 12 exercises</title>
+  </head>
+  <body>
+
+    <script>
+      let add = function() {
+        console.log(2 + 3);
+      };
+
+      function runTwice(fun) {
+        fun();
+        console.log('euaquii');        
+        fun();
+
+      }
+
+      runTwice(function() {
+        console.log('12b');
+      });
+
+      runTwice(add);
+    </script>
+  </body>
+</html>
